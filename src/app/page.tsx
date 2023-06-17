@@ -15,9 +15,6 @@ import {
 export default function DashboardExample() {
   return (
     <main className="px-12 py-12">
-      <Title>Dashboard</Title>
-      <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</Text>
-
       <TabGroup className="mt-6">
         <TabList>
           <Tab>Overview</Tab>
