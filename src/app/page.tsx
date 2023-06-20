@@ -1,4 +1,5 @@
 "use client";
+import { queryBuilder } from '../lib/planetscale';
 
 import {
   Card,
@@ -8,11 +9,6 @@ import {
   Flex,
   Icon,
   Text,
-  Tab,
-  TabList,
-  TabGroup,
-  TabPanel,
-  TabPanels,
   Color,
   AreaChart,
 } from "@tremor/react";
@@ -65,8 +61,7 @@ const data = [
   },
 ];
 
-export default function DashboardExample() {
-  // 
+export default async function DashboardExample() {
   return (
     <main className="px-12 py-12">
           <Grid numItemsSm={2} numItemsLg={3} className="gap-6">
