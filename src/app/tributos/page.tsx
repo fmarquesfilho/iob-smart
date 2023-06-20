@@ -21,7 +21,6 @@ export default async function IndexPage({
   return (
     <main className="p-4 md:p-10 mx-auto max-w-7xl">
       <Title>Tributos</Title>
-      <Text>Lista de tributos à pagar.</Text>
       <Search />
       <Card className="mt-6">
         <TributosTable tributos={tributos} />
