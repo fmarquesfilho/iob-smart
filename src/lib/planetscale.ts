@@ -2,15 +2,15 @@ import 'server-only';
 import { Generated, Kysely } from 'kysely';
 import { PlanetScaleDialect } from 'kysely-planetscale';
 
-interface User {
-  id: Generated<number>;
-  name: string;
-  username: string;
-  email: string;
+interface Tributo {
+  tributo_id: number;
+  razao_social_empresa: string;
+  tributo_nome: string;
+  tributo_valor: number;
 }
 
 interface Database {
-  users: User;
+  tributos: Tributo;
   // https://github.com/nextauthjs/next-auth/issues/4922
 }
 
