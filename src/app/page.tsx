@@ -69,15 +69,6 @@ export default function DashboardExample() {
   // 
   return (
     <main className="px-12 py-12">
-      <Title>Painel</Title>
-      <Text>Acompanhe a evolução da receita, despesa e tributos.</Text>
-      <TabGroup className="mt-6">
-        <TabList>
-          <Tab>Overview</Tab>
-          <Tab>Detail</Tab>
-        </TabList>
-        <TabPanels>
-          <TabPanel>
           <Grid numItemsSm={2} numItemsLg={3} className="gap-6">
             {categories.map((item) => (
               <Card key={item.title} decoration="top" decorationColor={item.color}>
@@ -109,16 +100,6 @@ export default function DashboardExample() {
               </Card>
 
             </div>
-          </TabPanel>
-          <TabPanel>
-            <div className="mt-6">
-              <Card>
-                <div className="h-96" />
-              </Card>
-            </div>
-          </TabPanel>
-        </TabPanels>
-      </TabGroup>
     </main>
   );
 }
