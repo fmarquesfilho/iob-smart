@@ -36,7 +36,7 @@ const categories: {
   },
   {
     title: "Tributos",
-    metric: "R$ 1,234,56",
+    metric: "R$ 1.234,56",
     icon: UserGroupIcon,
     color: "amber",
   },
