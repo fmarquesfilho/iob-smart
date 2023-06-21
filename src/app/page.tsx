@@ -14,7 +14,8 @@ import {
 } from "@tremor/react";
 
 // import heroicons react components
-import { TicketIcon, UserGroupIcon, TrashIcon } from "@heroicons/react/24/solid";
+import { TicketIcon, UserGroupIcon, TrashIcon, ArrowDownIcon, ArrowUpIcon } from "@heroicons/react/24/solid";
+import { CurrencyDollarIcon } from '@heroicons/react/24/outline';
 
 const categories: {
   title: string;
@@ -25,19 +26,19 @@ const categories: {
   {
     title: "Receita",
     metric: "R$ 23.456,85",
-    icon: TicketIcon,
+    icon: ArrowDownIcon,
     color: "indigo",
   },
   {
     title: "Despesa",
     metric: "R$ 13.123,45",
-    icon: TrashIcon,
+    icon: ArrowUpIcon,
     color: "fuchsia",
   },
   {
     title: "Tributos",
     metric: "R$ 1.234,56",
-    icon: UserGroupIcon,
+    icon: CurrencyDollarIcon,
     color: "amber",
   },
 ];
