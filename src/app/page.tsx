@@ -45,27 +45,27 @@ const categories: {
 
 const data = [
   {
-    Month: "Jan 21",
+    Month: "Jan 22",
     Receita: 2890,
     Despesa: 2400,
-    Tributos: 2400,
+    Tributos: 1200,
   },
   {
-    Month: "Feb 21",
-    Receita: 1800,
-    Despesa: 1398,
-    Tributos: 2210,
+    Month: "Fev 22",
+    Receita: 2340,
+    Despesa: 2940,
+    Tributos: 1900,
   },
   {
-    Month: "Jan 22",
-    Receita: 490,
-    Despesa: 980,
-    Tributos: 2290,
+    Month: "Jan 23",
+    Receita: 3800,
+    Despesa: 3200,
+    Tributos: 1200,
   },
   {
-    Month: "Feb 22",
-    Receita: 3490,
-    Despesa: 4300,
+    Month: "Fev 23",
+    Receita: 4300,
+    Despesa: 3400,
     Tributos: 2100,
   },
 ];
