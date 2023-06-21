@@ -31,13 +31,13 @@ const categories: {
   },
   {
     title: "Despesa anual",
-    metric: "R$ 13.123,45",
+    metric: "R$ 18.123,45",
     icon: ArrowUpIcon,
     color: "fuchsia",
   },
   {
     title: "Tributos à pagar",
-    metric: "R$ 1.234,56",
+    metric: "R$ 11.134,56",
     icon: CurrencyDollarIcon,
     color: "amber",
   },
