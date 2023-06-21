@@ -24,19 +24,19 @@ const categories: {
   color: Color;
 }[] = [
   {
-    title: "Receita",
+    title: "Receita anual",
     metric: "R$ 23.456,85",
     icon: ArrowDownIcon,
     color: "indigo",
   },
   {
-    title: "Despesa",
+    title: "Despesa anual",
     metric: "R$ 13.123,45",
     icon: ArrowUpIcon,
     color: "fuchsia",
   },
   {
-    title: "Tributos",
+    title: "Tributos à pagar",
     metric: "R$ 1.234,56",
     icon: CurrencyDollarIcon,
     color: "amber",
