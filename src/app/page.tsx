@@ -24,7 +24,7 @@ const categories: {
 }[] = [
   {
     title: "Receita",
-    metric: "$ 23,456,456",
+    metric: "$ 23,456",
     icon: TicketIcon,
     color: "indigo",
   },
@@ -36,7 +36,7 @@ const categories: {
   },
   {
     title: "Tributos",
-    metric: "456",
+    metric: "1,234",
     icon: UserGroupIcon,
     color: "amber",
   },
@@ -45,19 +45,27 @@ const categories: {
 const data = [
   {
     Month: "Jan 21",
-    Sales: 2890,
-    Profit: 2400,
+    Receita: 2890,
+    Despesa: 2400,
+    Tributos: 2400,
   },
   {
     Month: "Feb 21",
-    Sales: 1890,
-    Profit: 1398,
+    Receita: 1800,
+    Despesa: 1398,
+    Tributos: 2210,
   },
-  // ...
   {
     Month: "Jan 22",
-    Sales: 3890,
-    Profit: 2980,
+    Receita: 490,
+    Despesa: 980,
+    Tributos: 2290,
+  },
+  {
+    Month: "Feb 22",
+    Receita: 3490,
+    Despesa: 4300,
+    Tributos: 2100,
   },
 ];
 
@@ -79,14 +87,14 @@ export default async function DashboardExample() {
           </Grid>
             <div className="mt-6">
               <Card>
-                <Title>Performance</Title>
-                <Text>Comparison between Sales and Profit</Text>
+                <Title>Balanço Financeiro</Title>
+                <Text>Comparação entre Receita, Despesa e Tributos</Text>
                 <AreaChart
                   className="mt-4 h-80"
                   data={data}
-                  categories={["Sales", "Profit"]}
+                  categories={["Receita", "Despesa", "Tributos"]}
                   index="Month"
-                  colors={["indigo", "fuchsia"]}
+                  colors={["indigo", "fuchsia", "amber"]}
                   yAxisWidth={60}
                   valueFormatter={(number: number) =>
                     `$ ${Intl.NumberFormat("us").format(number).toString()}`
