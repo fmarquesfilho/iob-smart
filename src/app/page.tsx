@@ -24,19 +24,19 @@ const categories: {
 }[] = [
   {
     title: "Receita",
-    metric: "$ 23,456",
+    metric: "R$ 23.456,85",
     icon: TicketIcon,
     color: "indigo",
   },
   {
     title: "Despesa",
-    metric: "$ 13,123",
+    metric: "R$ 13.123,45",
     icon: TrashIcon,
     color: "fuchsia",
   },
   {
     title: "Tributos",
-    metric: "1,234",
+    metric: "R$ 1,234,56",
     icon: UserGroupIcon,
     color: "amber",
   },
